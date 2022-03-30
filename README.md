@@ -1,6 +1,6 @@
-# Uptech Helpers 
+# Uptech iOS Helpers 
 
-iOS helper library that contains commonly used extensions in **Uptech** iOS projects.
+iOS helper library that contains commonly used code in **Uptech** iOS projects.
 
 ## What's included
 - Array extensions
@@ -15,8 +15,8 @@ iOS helper library that contains commonly used extensions in **Uptech** iOS proj
 
 ## Installation
 
-// TODO: spm, cocoapods
+#### Swift Package Manager
+in process
 
-// Questions
-// add info on whats covered by tests?
-// more or less info on what's included?
+#### CocoaPods
+in process 
