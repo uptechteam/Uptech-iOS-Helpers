@@ -3,7 +3,6 @@
 
 # Xcode
 build/
-/*.xcodeproj
 xcuserdata/
 DerivedData/
 

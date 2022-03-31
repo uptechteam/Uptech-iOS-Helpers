@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Uptech_Helpers
+@testable import Uptech_iOS_Helpers
 
 final class UIViewExtensionsTests: XCTestCase {
 		
