@@ -60,7 +60,7 @@ public extension Array where Element: Equatable {
 		/// Returns previous element in array before a given one.
 		/// - Parameter item: An element to search previous element.
 		/// - Returns: Element before passed item. If passed item is first element in array will return nil.
-		func prev(item: Element) -> Element? {
+		func previous(item: Element) -> Element? {
 				if let index = self.firstIndex(of: item) {
 						return self[safe: index - 1]
 				}

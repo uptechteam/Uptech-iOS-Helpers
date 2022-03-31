@@ -83,14 +83,14 @@ final class ArrayExtensionsTests: XCTestCase {
 				XCTAssertNil(result, "Result should be nil")
 		}
 		
-		func testPrevElementExist() throws {
-				let result = sut.prev(item: 2)
+		func testPreviousElementExist() throws {
+				let result = sut.previous(item: 2)
 				let expectedResult = 1
 				XCTAssertEqual(result, expectedResult, "Result should be \(expectedResult)")
 		}
 		
-		func testPrevElementNil() throws {
-				let result = sut.prev(item: 0)
+		func testPreviousElementNil() throws {
+				let result = sut.previous(item: 0)
 				XCTAssertNil(result, "Result should be nil")
 		}
 }

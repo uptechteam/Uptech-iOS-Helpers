@@ -11,7 +11,7 @@ public extension Collection where Index == Int, Iterator.Element: Collection, It
 		/// Returns Element in two dimensional array by IndexPath.
 		/// - Parameter indexPath: An IndexPath to get Element by section and row.
 		/// - Returns: Element by given indexPath.
-		subscript(_ indexPath: IndexPath) -> Iterator.Element.Iterator.Element {
-				return self[indexPath.section][indexPath.row]
+		subscript(indexPath: IndexPath) -> Iterator.Element.Iterator.Element {
+				self[indexPath.section][indexPath.row]
 		}
 }

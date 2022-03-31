@@ -26,7 +26,7 @@ iOS helper library that contains commonly used code in **Uptech** iOS projects.
     - frequently used values
 - Array extensions
   - safe subscript
-  - next, prev, remove *Element* methods
+  - next, previous, remove *Element* methods
 - Collection:
   - subscript by indexPath
 
