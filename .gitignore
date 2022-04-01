@@ -1,0 +1,12 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+xcuserdata/
+DerivedData/
+
+# Swift Package Manager
+.build
+Packages
+Package.pins
