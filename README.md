@@ -41,4 +41,7 @@ To integrate using Apple's Swift package manager, without Xcode integration, add
 ```
 
 #### CocoaPods
-in process 
+
+```rb
+pod 'Uptech_iOS_Helpers'
+```
