@@ -1,5 +1,5 @@
 //
-//  NSLayoutConstraint Tests.swift
+//  NSLayoutConstraint+extensions Tests.swift
 //  
 //
 //  Created by Sergey Kletsov on 29.03.2022.
@@ -8,7 +8,7 @@
 import XCTest
 @testable import Uptech_iOS_Helpers
 
-final class NSLayoutConstraintTests: XCTestCase {
+final class NSLayoutConstraintExtensionsTests: XCTestCase {
 		
 		func testWithPriority() throws {
 				let sut = NSLayoutConstraint()
