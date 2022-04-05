@@ -11,10 +11,10 @@ import UIKit
 
 final class UITableViewExtensionsTests: XCTestCase {
 		private class TestCell: UITableViewCell, ReusableCell { }
+		private let cellType = TestCell.self
 		
 		func testRegisterCorrectType() throws {
 				let tableView = UITableView()
-				let cellType = TestCell.self
 				tableView.register(cellType)
 				let cell = tableView.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: .init(item: 0, section: 0))
 				let isCellRightType = cell.isKind(of: cellType)
@@ -23,7 +23,6 @@ final class UITableViewExtensionsTests: XCTestCase {
 		
 		func testDequeueNotCrashing() {
 				let tableView = UITableView()
-				let cellType = TestCell.self
 				tableView.register(cellType, forCellReuseIdentifier: cellType.reuseIdentifier)
 				let _ = tableView.dequeueReusableCell(for: .init(item: 0, section: 0), cellType: cellType)
 		}
