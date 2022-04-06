@@ -1,5 +1,5 @@
 //
-//  UIView+extensions Tests.swift
+//  UIView+extensionsTests.swift
 //  
 //
 //  Created by Sergey Kletsov on 29.03.2022.

@@ -13,7 +13,7 @@ iOS helper library that contains commonly used code in **Uptech** iOS projects.
    - **NibInitializable**
 
       Protocol that helps to initialize view with xib.
-- Table View helpers
+- Table & Collection View helpers
   - *dequeue* and *register* methods for cells that confirm's to **ReusableCell** and optionaly **NibInitializable** (for cell's created via xibs)
 - UI-in-code helpers
   - UIView extensions:

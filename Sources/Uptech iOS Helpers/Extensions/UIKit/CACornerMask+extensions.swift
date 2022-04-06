@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  CACornerMask+extensions.swift
 //  
 //
 //  Created by Sergey Kletsov on 25.03.2022.
