@@ -1,5 +1,5 @@
 //
-//  Collection+indexPath Tests.swift
+//  Collection+indexPathTests.swift
 //  
 //
 //  Created by Sergey Kletsov on 29.03.2022.

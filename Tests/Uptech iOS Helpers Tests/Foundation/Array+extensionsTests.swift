@@ -1,5 +1,5 @@
 //
-//  Array+extensions Tests.swift
+//  Array+extensionsTests.swift
 //  
 //
 //  Created by Sergey Kletsov on 25.03.2022.

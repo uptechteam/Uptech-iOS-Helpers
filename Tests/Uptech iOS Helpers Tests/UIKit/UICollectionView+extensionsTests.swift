@@ -1,5 +1,5 @@
 //
-//  UICollectionView+extensions Tests.swift
+//  UICollectionView+extensionsTests.swift
 //  
 //
 //  Created by Sergey Kletsov on 05.04.2022.

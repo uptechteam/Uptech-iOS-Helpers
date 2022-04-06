@@ -1,5 +1,5 @@
 //
-//  UITableView+extensions Tests.swift
+//  UITableView+extensionsTests.swift
 //  
 //
 //  Created by Sergey Kletsov on 05.04.2022.
