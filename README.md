@@ -1,5 +1,7 @@
 # Uptech-iOS-Helpers 
 
+[![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)
+
 iOS helper library that contains commonly used code in **Uptech** iOS projects.
 
 ## What's included
