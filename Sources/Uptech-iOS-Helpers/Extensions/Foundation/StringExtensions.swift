@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - NSAttributedString builder
+// MARK: - NSAttributedString creation
 
 public extension String {
     /// The wrapper for a text message and an underlying `URL` to which the user will navigate upon tap.
@@ -79,5 +79,12 @@ public extension String {
         var attributes = clickableAttributes
         attributes[.link] = url
         return attributes
+    }
+
+    /// Build an attributed string with provided attributes from `self`.
+    /// - Parameter attributes: Attributes applying to `self`.
+    /// - Returns: Attributed string with provided attributes.
+    func byAddingAttributes(_ attributes: [NSAttributedString.Key: Any]) -> NSAttributedString {
+        NSAttributedString(string: self, attributes: attributes)
     }
 }
