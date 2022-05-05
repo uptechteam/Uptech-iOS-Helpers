@@ -10,10 +10,10 @@ import UIKit
 // MARK: - Subview addition
 
 public extension UIView {
-    /// Adds subview to self.
+    /// Adds a subview to self.
     /// Sets subview's `translatesAutoresizingMaskIntoConstraints` to `false` and activates given constraints array.
     /// - Parameters:
-    ///   - view: View to add as a subview and disable Autoresizing Mask.
+    ///   - view: The view to add as a subview and disable Autoresizing Mask.
     ///   - constraints: Constraints array to activate after adding subview and disabling Autoresizing Mask.
     func addSubview( _ view: UIView, withConstraints constraints: [NSLayoutConstraint]) {
         addSubview(view)
@@ -21,9 +21,9 @@ public extension UIView {
         constraints.activate()
     }
 
-    /// Adds subview to self.
+    /// Adds a subview to self.
     /// Sets subview's `translatesAutoresizingMaskIntoConstraints` to `false` and adds constraints to selfs edges.
-    /// - Parameter view: View to add as a subview and disable Autoresizing Mask.
+    /// - Parameter view: The view to add as a subview and disable Autoresizing Mask.
     func addSubviewWithEdgeConstraints(_ view: UIView) {
         addSubview(view, withConstraints: [
             view.topAnchor.constraint(equalTo: topAnchor),
@@ -33,9 +33,9 @@ public extension UIView {
         ])
     }
 
-    /// Adds subview to self.
+    /// Adds a subview to self.
     /// Sets subview's `translatesAutoresizingMaskIntoConstraints` to `false` and adds constraints to selfs `layoutMarginsGuide`.
-    /// - Parameter view: View to add as a subview and disable Autoresizing Mask.
+    /// - Parameter view: The view to add as a subview and disable Autoresizing Mask.
     func addSubviewWithMarginEdgeConstraints(_ view: UIView) {
         addSubview(view, withConstraints: [
             view.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor),
@@ -45,10 +45,10 @@ public extension UIView {
         ])
     }
 
-    /// Inserts subview at a given index with given constraints.
+    /// Inserts a subview at the given index with given constraints.
     /// Also will set subview's `translatesAutoresizingMaskIntoConstraints` to `false`.
     /// - Parameters:
-    ///   - view: View to insert as a subview and disable Autoresizing Mask.
+    ///   - view: The view to insert as a subview and disable Autoresizing Mask.
     ///   - index: The index in the array of the subviews property at which to insert the view. Defaults to `.zero`.
     ///   - constraints: Constraints array to activate after inserting subview and disabling Autoresizing Mask.
     func insertSubview(_ view: UIView, at index: Int = .zero, withConstraints constraints: [NSLayoutConstraint] ) {
@@ -57,10 +57,10 @@ public extension UIView {
         constraints.activate()
     }
 
-    /// Inserts subview at a given index and adds constraints to selfs edges.
+    /// Inserts a subview at the given index and adds constraints to selfs edges.
     /// Also will set subview's `translatesAutoresizingMaskIntoConstraints` to `false`.
     /// - Parameters:
-    ///   - view: View to insert as a subview and disable Autoresizing Mask.
+    ///   - view: The view to insert as a subview and disable Autoresizing Mask.
     ///   - index: The index in the array of the subviews property at which to insert the view. Defaults to `.zero`.
     func insertSubviewWithEdgeConstraints(_ view: UIView, at index: Int = .zero) {
         insertSubview(view, at: index, withConstraints: [
@@ -71,10 +71,10 @@ public extension UIView {
         ])
     }
 
-    /// Inserts subview at a given index and adds constraints to selfs `layoutMarginsGuide`.
+    /// Inserts a subview at the given index and adds constraints to selfs `layoutMarginsGuide`.
     /// Also will set subview's `translatesAutoresizingMaskIntoConstraints` to `false`.
     /// - Parameters:
-    ///   - view: View to insert as a subview and disable Autoresizing Mask.
+    ///   - view: The view to insert as a subview and disable Autoresizing Mask.
     ///   - index: The index in the array of the subviews property at which to insert the view. Defaults to `.zero`.
     func insertSubviewWithMarginEdgeConstraints(_ view: UIView, at index: Int = .zero) {
         insertSubview(view, at: index, withConstraints: [
@@ -89,16 +89,14 @@ public extension UIView {
 // MARK: - Rounded corners
 
 public extension UIView {
-    /// Adds corner radius to given corners.
+    /// Adds corner radius for given corners.
     /// - Parameters:
     ///   - radius: Corner radius to add.
-    ///   - corners: Corners to add corner radius to. Default value .all
-    func roundCornersContinuously(radius: CGFloat, corners: CACornerMask = .all) {
+    ///   - corners: Corners to add corner radius to. Defaults to `.all`.
+    ///   - cornerCurve: The curve used for rendering the rounded corners of the layer. Defaults to `.circular`.
+    func roundedCorners(radius: CGFloat, corners: CACornerMask = .all, cornerCurve: CALayerCornerCurve = .circular) {
         layer.maskedCorners = corners
         layer.cornerRadius = radius
-
-        if #available(iOS 13.0, *) {
-            layer.cornerCurve = .continuous
-        }
+        layer.cornerCurve = cornerCurve
     }
 }
