@@ -13,4 +13,10 @@ public extension UITextView {
         textContainerInset = .zero
         textContainer.lineFragmentPadding = .zero
     }
+
+    /// Sets provided color for `.foregroundColor` key in `linkTextAttributes`.
+    /// - Parameter foregroundColor: The color to apply to links.
+    func setLinkAttributes(foregroundColor: UIColor) {
+        linkTextAttributes = [.foregroundColor: foregroundColor]
+    }
 }
