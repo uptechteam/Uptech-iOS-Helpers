@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import UIKitUptech
+@testable import UIKitHelper
 
 final class CollectionIndexPathTests: XCTestCase {
 		private let sut = [[0, 1, 2],
