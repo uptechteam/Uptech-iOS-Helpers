@@ -7,7 +7,7 @@
 
 import XCTest
 import UIKit
-@testable import Uptech_iOS_Helpers
+@testable import UIKitUptech
 
 final class UICollectionViewExtensionsTests: XCTestCase {
 		private class TestCell: UICollectionViewCell, ReusableCell { }
