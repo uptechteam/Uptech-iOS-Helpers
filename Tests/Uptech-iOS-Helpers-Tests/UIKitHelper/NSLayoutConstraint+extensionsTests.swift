@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Uptech_iOS_Helpers
+@testable import UIKitHelper
 
 final class NSLayoutConstraintExtensionsTests: XCTestCase {
 		

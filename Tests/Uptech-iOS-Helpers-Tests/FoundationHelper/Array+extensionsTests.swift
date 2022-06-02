@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Uptech_iOS_Helpers
+@testable import FoundationHelper
 
 final class ArrayExtensionsTests: XCTestCase {
 		private let sut = [0, 1, 2, 3, 4]
