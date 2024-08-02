@@ -8,10 +8,10 @@
 import UIKit
 
 public extension UILayoutPriority {
-		/// rawValue 999
-		static let almostRequired = UILayoutPriority(999)
-		/// rawValue 751
-		static let prioritizedCompressionResistance = UILayoutPriority(751)
-		/// rawValue 251
-		static let prioritizedHugging = UILayoutPriority(251)
+    /// rawValue 999
+    static let almostRequired = UILayoutPriority(999)
+    /// rawValue 751
+    static let prioritizedCompressionResistance = UILayoutPriority(751)
+    /// rawValue 251
+    static let prioritizedHugging = UILayoutPriority(251)
 }
