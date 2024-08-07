@@ -6,6 +6,7 @@ let package = Package(
     name: "Uptech-iOS-Helpers",
     platforms: [.iOS(.v13)],
     products: [
+        .library(name: "Uptech-iOS-Helpers", targets: ["UptechFoundationHelper", "UptechUIKitHelper", "UptechSwiftUIHelper"]),
         .library(name: "UptechFoundationHelper", targets: ["UptechFoundationHelper"]),
         .library(name: "UptechUIKitHelper", targets: ["UptechUIKitHelper"]),
         .library(name: "UptechSwiftUIHelper", targets: ["UptechSwiftUIHelper"])
