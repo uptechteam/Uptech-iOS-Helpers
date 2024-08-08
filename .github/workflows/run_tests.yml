@@ -11,4 +11,4 @@ jobs:
     - name: Prepare branch on runner
       uses: actions/checkout@v3
     - name: Build & Test
-      run: xcodebuild build clean test -scheme "Uptech Helpers" -destination "platform=iOS Simulator,name=IPhone 11"
+      run: xcodebuild build clean test -scheme "Uptech-iOS-Helpers-Package" -destination "platform=iOS Simulator,name=IPhone 11"
