@@ -82,6 +82,5 @@ To integrate using Apple's Swift package manager, without Xcode integration, add
 
 #### CocoaPods
 
-```rb
-pod 'Uptech_iOS_Helpers'
-```
+> [!CAUTION]
+> CocoaPods is deprecated starting with version 2.0.0
