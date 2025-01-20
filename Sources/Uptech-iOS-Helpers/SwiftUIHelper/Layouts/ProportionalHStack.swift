@@ -9,20 +9,20 @@ import SwiftUI
 
 /// HStack layout that layouts subviews by given proportions
 @available(iOS 16.0, *)
-struct ProportionalHStack: Layout {
-    let proportions: [CGFloat]
-    let spacing: CGFloat
+public struct ProportionalHStack: Layout {
+    private let proportions: [CGFloat]
+    private let spacing: CGFloat
 
     /// Creates new layout with given proportions and spacing
     /// - Parameters:
     ///   - proportions: Array of proportions. Numbers in array should add up to **1.0**. Number of proportions should be equal to number of subviews.
     ///   - spacing: Spacing between subviews. Default value is 0
-    init(proportions: [CGFloat], spacing: CGFloat = 0) {
+    public init(proportions: [CGFloat], spacing: CGFloat = 0) {
         self.proportions = proportions
         self.spacing = spacing
     }
 
-    func sizeThatFits(
+    public func sizeThatFits(
         proposal: ProposedViewSize,
         subviews: Subviews,
         cache: inout Void
@@ -30,7 +30,7 @@ struct ProportionalHStack: Layout {
         proposal.replacingUnspecifiedDimensions()
     }
 
-    func placeSubviews(
+    public func placeSubviews(
         in bounds: CGRect,
         proposal: ProposedViewSize,
         subviews: Subviews,
