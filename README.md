@@ -77,7 +77,7 @@ Package contains 4 libraries:
 
 To integrate using Apple's Swift package manager, without Xcode integration, add the following as a dependency to your Package.swift:
 ```swift
-.package(url: "https://github.com/uptechteam/Uptech-iOS-Helpers.git", .upToNextMajor(from: "2.0.0"))
+.package(url: "https://github.com/uptechteam/Uptech-iOS-Helpers.git", .upToNextMajor(from: "2.0.1"))
 ```
 
 #### CocoaPods
