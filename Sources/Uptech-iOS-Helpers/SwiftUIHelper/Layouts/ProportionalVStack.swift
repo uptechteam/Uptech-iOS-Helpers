@@ -17,7 +17,7 @@ public struct ProportionalVStack: Layout {
     /// - Parameters:
     ///   - proportions: Array of proportions. Numbers in array should add up to **1.0**. Number of proportions should be equal to number of subviews.
     ///   - spacing: Spacing between subviews. Default value is 0
-    init(proportions: [CGFloat], spacing: CGFloat = 0) {
+    public init(proportions: [CGFloat], spacing: CGFloat = 0) {
         self.proportions = proportions
         self.spacing = spacing
     }
